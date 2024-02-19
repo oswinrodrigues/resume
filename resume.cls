@@ -37,16 +37,11 @@
   \subsection[#1]{#1 \hfill \textnormal{#2}}
 }
 
-% usage: \organization{<company>}{<location>}
-\newcommand{\organization}[2]{
-  {\par \textbf{#1} \hfill #2 \par}
-  \vspace{0.85ex}
-}
-
 % usage: \position{<role>}{<date>}{<company>}{<location>}
 \newcommand{\position}[4]{
   \datedSubsection{#1}{#2}
-  \organization{#3}{#4}
+  \par \textbf{#3} \hfill #4 \par
+  \vspace{0.85ex}
 }
 
 % usage: \lineSummary{<description>}
