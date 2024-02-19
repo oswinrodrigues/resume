@@ -28,7 +28,7 @@
 \setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
 
 % usage: \iconSection{<heading>}{<icon>}
-\newcommand{\iconSection}[2]{\section[#1]{#1 \hfill #2}}
+\newcommand{\iconSection}[2]{\section[#1]{#2\ #1}}
 % usage: \datedSubsection{<subheading>}{<date>}
 \newcommand{\datedSubsection}[2]{\subsection[#1]{#1 \hfill \textnormal{#2}}}
 % usage: \linkedDatedSubsection{<url>}{<subheading>}{<date>}
