@@ -88,3 +88,7 @@
   }}
   \vspace{1.5ex}
 }
+
+\newcommand{\dotSeparatedItem}[1]{
+  #1 \textperiodcentered
+}
