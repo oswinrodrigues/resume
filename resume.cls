@@ -75,3 +75,14 @@
 % ...
 % <last-item>
 \newcommand{\dotSeparatedItem}[1]{#1 \textperiodcentered}
+
+% usage as follows:
+% \listBegin
+% \listItem{<first-item>}
+% \listItem{<second-item>}
+% ...
+% \listItem{<last-item>}
+% \listEnd
+\newcommand{\listBegin}{\begin{itemize}}
+\newcommand{\listEnd}{\end{itemize}}
+\newcommand{\listItem}[1]{\item{#1}}
