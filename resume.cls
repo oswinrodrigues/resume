@@ -36,7 +36,7 @@
 
 % usage: \iconSection{<heading>}{<icon>}
 \newcommand{\iconSection}[2]{
-  \section[#1]{#2\ #1}
+  \section[#1]{#1 \hfill #2}
 }
 
 % usage: \datedSubsection{<subheading>}{<date>}
