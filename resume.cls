@@ -44,10 +44,12 @@
   \vspace{0.85ex}
 }
 
+% usage: \myLine{<description>}
+\newcommand{\myLine}[1]{\par #1 \par}
 % usage: \lineSummary{<highlight>}
-\newcommand{\lineSummary}[1]{\par \textit{#1} \par}
+\newcommand{\lineSummary}[1]{\myLine{\textit{#1}}}
 % usage: \lineTwoSides{<left-side>}{<right-side>}
-\newcommand{\lineTwoSides}[2]{\par #1 \hfill #2 \par}
+\newcommand{\lineTwoSides}[2]{\myLine{#1 \hfill #2}}
 % usage: \linkedLineTwoSides{<url>}{<left-side>}{<right-side>}
 \newcommand{\linkedLineTwoSides}[3]{\lineTwoSides{\href{#1}{#2}}{#3}}
 
