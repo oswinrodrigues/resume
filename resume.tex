@@ -5,63 +5,167 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Oswin Rodrigues}
+\info{oswin.rodrigues@outlook.com}{+1 226 606 6220}{oswinrodrigues}
 
-\basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+% TODO: Separate each section into its own .tex file and 'stitch' them together in this master file
 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\iconSection{Goals}{\faTrophy}
 
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
-\begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
-\begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
-\end{itemize}
-
-\section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+  \item Micro: to excel in the design of hardware and embedded software technologies.
+  \item Macro: to belong to a team passionate about problems that matter and solutions that revolutionize.
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
+\iconSection{Tools}{\faWrench}
 
-\section{\faInfo\ Miscellaneous}
 \begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+  \item % Hardware:
+  Schematics \& Layouts\textperiodcentered
+  Soldering \& Rework\textperiodcentered
+  Multimeter \& Oscilloscope\textperiodcentered
+  Arduino \& Raspberry Pi
+  \hfill \faBolt
+
+  \item % Software:
+  C\textperiodcentered 
+  C++\textperiodcentered
+  Python\textperiodcentered
+  Linux\textperiodcentered
+  ROS\textperiodcentered
+  FPGA Programming\textperiodcentered
+  MATLAB\textperiodcentered
+  PLC Ladder Logic\textperiodcentered
+  JavaScript%\textperiodcentered
+  % Assembly\textperiodcentered
+  % VHDL\textperiodcentered
+  \hfill \faCode
+
+  % \item % Mechanical:
+  % AutoCAD\textperiodcentered
+  % Solidworks\textperiodcentered
+  % \hfill \faGear
 \end{itemize}
+
+\iconSection{Internships}{\faLineChart}
+
+\position{Hardware Engineer}{Summer 2017}{Nuvation Energy}{Waterloo, ON}
+\textit{Fulfilling Integrated Design-to-Manufacturing (IDM) needs for released products.}
+\begin{itemize}
+  \item Executed Altium layout updates, team design reviews and fabbed board inspections.
+  \item Investigated isoSPI bug by sniffing traffic with oscilloscope and consulting IC datasheet.
+  \item Reworked boards extensively, being trained to even solder small 0402 SMT packages.
+  \item Designed and built hipot test fixtures that comply with national safety regulations.
+  \item Served in various other IDM-related avenues as needed, such as: building assemblies and cables, creating wiring diagrams in Visio, running in-house production tests, documenting developments in detail, facilitating environmental certification process.
+\end{itemize}
+
+\position{Mechatronics Engineer}{Fall 2016}{KitchenMate Inc.}{Toronto, ON}
+\textit{Building electrical and software sub-systems in automated home-cooker.}
+\begin{itemize}
+  \item Designed custom linear encoder sensor with photo-interrupter pair and Python driver.
+  \item Sensed heat modes on cooker with hack involving opto-isolator and ADC combination.
+  \item Received abundant exposure and insight on the business side of startup operations.
+  % \item Used datasheets to source parts and lab bench-top equipment to test circuit.
+\end{itemize}
+
+\position{AI \& Robotics Engineer}{Winter 2016}{Kindred Systems Inc.}{Toronto, ON}
+\textit{Robot-wrangling with Python over distributed communication architecture system.}
+\begin{itemize}
+  \item Soldered robots' power boards and executed safety bringup.
+  \item Sourced and integrated components into system with custom-coded drivers.
+  \item Coded behaviour patterns of robots using Finite State Machines (FSMs) in Python.
+  % \item Informal intro to ML / N-nets, FK / IK, Grasping, FSM, DB (ES)
+  % \item People skills: pair-programming, 1-on-1, standups, blog posts, Happy Hour, AI planning, CI for internal processes, HW concept review
+  % \item Python fu: rapid prototyping / scripting AND enterprise-level code i.e. classes, exception-handling, logging, PDB debugging, linting, documentation
+\end{itemize}
+
+\position{EDA \& CAD Engineer}{Summer 2015}{Upverter Inc.}{Toronto, ON}
+\textit{Creating 150+ components' symbols and footprints; enhancing CAD features using JavaScript.}
+% \textit{Enhancing PCB CAD features in hardware and software avenues.}
+% \textit{Creating and verifying symbols and footprints for 150+ electronic components.}
+% \begin{itemize}
+%   \item Created and verified symbols and footprints for 150+ electronic components.
+%   \item Used JavaScript to re-factor features and fire-fight bugs extensively.
+%   \item Implemented component-tagging feature, using pin names to categorize functionality.  
+%   \item Adjusted prioritization of design rules in layout constraint manager.
+%   \item Fixed incorrect drawing and positioning of constraint violation layout bodies.
+%   \item Re-factored event-listening logic for drawing nets in schematic editor.
+%   \item Corrected pin manager's oversight in tracking connection mappings.
+%   \item Enabled efficient BGA row enumeration during footprint generation.
+% \end{itemize}
+
+\position{Junior Mechanical Designer}{Fall 2014}{Prodomax Automation Inc.}{Barrie, ON}
+\textit{Designing in Solidworks two stations in assembly line for vehicle's seat track mechanism.}
+% \textit{Modelling in Solidworks custom jigs and fixtures for automotive part-assembly stations.}
+% \begin{itemize}
+%   \item Designed two stations in assembly line for vehicle's seat track mechanism. % Inserted anti-collapse spacer, stamp-pressed bushing.
+%   \item Detailed and ballooned numerous tooling drawings for manufacturing.
+%   \item Worked around design constraints using critical thinking and teamwork.
+% \end{itemize}
+
+\position{Neuro-Robotics Lab Research Assistant}{Winter 2014}{University of Waterloo}{Waterloo, ON}
+\textit{Implementing C++ and Python nodes on ROS-run Turtlebot for navigation research.}
+% \textit{Setting up and operating ROS-run Turtlebot for social navigation research purposes.}
+% \begin{itemize}
+%   \item Wrote C++ and Python nodes to implement navigation stack on Turtlebot. 
+%   \item Published sensor, odometry and transform messages to mobile base.
+%   \item Adapted existing open-source code for advanced algorithms: person-detection, SLAM navigation.
+%   \item Gained immense troubleshooting experience associated with accommodating open-source software.
+% \end{itemize}
+
+\iconSection{Projects}{\faFlask}
+
+\datedSubsection{\href{https://guitarsandgadgets2018.wordpress.com}{Guitar Instructor: Capstone Design Project}}{Summer 2017 - Winter 2018}%{\faGuitar}
+\begin{itemize}
+  \item Built, as a team, an automated device to interactively teach chords on a guitar.
+  \item Developed, personally, main controller circuit and algorithm for overall integration.
+  \item Led the team with proven system integration and task co-ordination skills.
+\end{itemize}
+
+\datedSubsection{UW Robotics Team \& Waterloo Autonomous Vehicles Lab}{Various}%{\faCar}
+\begin{itemize}
+  \item Designed and reviewed schematics, layouts and components in EAGLE and DipTrace for motor shields. % on racing robot car.
+  \item Spec-ed and sourced sensors for soil-analysis, given engineering and science constraints.
+  \item Soldered SMT and THT parts onto bare PCBs and probed subsequently for bringup.
+  % \item Researched design considerations for wireless (RF) e-stop mechanism on robot racing car.
+\end{itemize}
+
+\datedSubsection{\href{https://github.com/oswinrodrigues/LED-Matrix-And-Accelerometer}{Tilt-Sensitive LED Matrix Panel}}{Winter 2016}%{\faLightbulbO}
+\begin{itemize}
+  \item Wrote LED matrix panel driver, with two 74HC595N shift registers for I/O expansion.
+  \item Wrote IMU driver for ADXL335 and MPU6050, with filter to integrate gyro and accelerometer.
+\end{itemize}
+
+% \datedSubsection{Hackathons}{Various}
+% \begin{itemize}
+%   \item \linkedLineTwoSides{https://github.com/DChang87/HtN}{Pebble-run dosage notification service - \textit{SmartMeds}; used C.}{Hack the North, 2015}
+%   \item \linkedLineTwoSides{http://devpost.com/software/drumyo}{Myo-controlled air drum kit - \textit{DruMyo}; used C++.} {hackWaterloo, 2014}
+%   \item \linkedLineTwoSides{https://github.com/fanwashere/SolidWorksControls}{Myo-enabled Solidworks controller; used Lua.} {Hack the North, 2014}
+%   \item \lineTwoSides{IMU-based instructor - \textit{Yoga Yoda}; developed business case.} {PCH Hardware Hackathon, 2015}
+% \end{itemize}
+
+
+\iconSection{Courses}{\faBook}
+
+\subsection{\textbf{Hardware}}
+\begin{itemize}
+  \item \linkedLineTwoSides{http://www.ucalendar.uwaterloo.ca/1617/COURSE/course-ECE.html\#ECE444}{Integrated Analog Electronics}{100\%}
+  \item \linkedLineTwoSides{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html\#MTE220}{Sensors \& Instrumentation}{80\%}
+  \item \linkedLineTwoSides{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html\#MTE120}{Circuits}{93\%}
+  \item \linkedLineTwoSides{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html\#MTE320}{Actuators \& Power Electronics}{92\%}
+\end{itemize}
+
+\subsection{\textbf{Embedded Software}}
+\begin{itemize}
+  \item \linkedLineTwoSides{http://www.ucalendar.uwaterloo.ca/1617/COURSE/course-ECE.html\#ECE406}{Algorithm Design \& Analysis}{90\%}
+  \item \linkedLineTwoSides{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html\#MTE341}{Microprocessor Systems \& Interfacing}{95\%}
+  \item \linkedLineTwoSides{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html\#MTE241}{Computer Structures \& Real-Time Systems}{91\%}
+  \item \linkedLineTwoSides{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html\#MTE262}{Data Structures \& Algorithms}{94\%}
+\end{itemize}
+
+
+\iconSection{Education}{\faGraduationCap}
+\position{Mechatronics Engineering, Honors, BASc.}{Class of 2018}{University of Waterloo}{Waterloo, ON}
+\textit{Graduated with distinction, having a cumulative GPA of 88.23\%}
 
 \end{document}
