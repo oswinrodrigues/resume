@@ -63,9 +63,9 @@
 % where <username> is the same handle for both GitHub and LinkedIn
 \newcommand{\info}[3]{
   \centerline{\large{
-    \href{mailto:#1}{\faEnvelopeO\ #1}\textperiodcentered
-    \href{tel:#2}{\faPhone\ #2}\textperiodcentered
-    \href{https://github.com/#3}{\faGithub}\ % only icon. no text, no separator.
+    \href{mailto:#1}{\faEnvelopeO\ #1} \thinspace
+    \href{tel:#2}{\faPhone\ #2} \thinspace
+    \href{https://github.com/#3}{\faGithub} % only icon. no text, no separator.
     \href{https://www.linkedin.com/in/#3}{\faLinkedin\ #3}
   }}
   \vspace{1.5ex}
