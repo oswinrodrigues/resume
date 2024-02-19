@@ -26,7 +26,7 @@
 \titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule]
 \titlespacing*{\section}{0cm}{*1.8}{*1.8}
 % customize subsection headings: make large and left-aligned
-\titleformat{\subsection}{\large\raggedright}{}{0em}{}
+\titleformat{\subsection}{\large\raggedright\bf}{}{0em}{}
 \titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
 
 % support bullet lists
@@ -41,7 +41,7 @@
 
 % usage: \datedSubsection{<subheading>}{<date>}
 \newcommand{\datedSubsection}[2]{
-  \subsection[#1]{\textbf{#1} \hfill #2}
+  \subsection[#1]{#1 \hfill \textnormal{#2}}
 }
 
 % usage: \org{<company>}{<location>}
