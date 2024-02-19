@@ -11,14 +11,7 @@
 \RequirePackage{fontawesome}
 
 % format page layout
-\RequirePackage[
-	a4paper,
-	left=0.5in,
-	right=0.5in,
-	top=0.5in,
-	bottom=0.5in,
-	nohead
-]{geometry}
+\RequirePackage[a4paper, left=0.5in, right=0.5in, top=0.5in, bottom=0.5in, nohead]{geometry}
 
 % format section headings
 \RequirePackage{titlesec}
@@ -26,7 +19,7 @@
 \titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule]
 \titlespacing*{\section}{0cm}{*1.8}{*1.8}
 % customize subsection headings: make large and left-aligned
-\titleformat{\subsection}{\large\raggedright\bf}{}{0em}{}
+\titleformat{\subsection}{\large\raggedright\bfseries}{}{0em}{}
 \titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
 
 % support bullet lists
@@ -44,8 +37,8 @@
   \subsection[#1]{#1 \hfill \textnormal{#2}}
 }
 
-% usage: \org{<company>}{<location>}
-\newcommand{\org}[2]{
+% usage: \organization{<company>}{<location>}
+\newcommand{\organization}[2]{
   {\par \textbf{#1} \hfill #2 \par}
   \vspace{0.85ex}
 }
@@ -53,17 +46,17 @@
 % usage: \position{<role>}{<date>}{<company>}{<location>}
 \newcommand{\position}[4]{
   \datedSubsection{#1}{#2}
-  \org{#3}{#4}
+  \organization{#3}{#4}
 }
 
-% usage: \oneLineSummary{<description>}
-\newcommand{\oneLineSummary}[1]{
+% usage: \lineSummary{<description>}
+\newcommand{\lineSummary}[1]{
   \textit{#1}
 }
 
 % usage: \lineTwoSides{<left-side>}{<right-side>}
 \newcommand{\lineTwoSides}[2]{
-  {\par #1 \hfill #2 \par}
+  \par #1 \hfill #2 \par
 }
 
 % usage: \lineTwoSides{<url>}{<left-side>}{<right-side>}
