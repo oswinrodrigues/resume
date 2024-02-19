@@ -44,20 +44,12 @@
   \vspace{0.85ex}
 }
 
-% usage: \lineSummary{<description>}
-\newcommand{\lineSummary}[1]{
-  \textit{#1}
-}
-
+% usage: \lineSummary{<highlight>}
+\newcommand{\lineSummary}[1]{\par \textit{#1} \par}
 % usage: \lineTwoSides{<left-side>}{<right-side>}
-\newcommand{\lineTwoSides}[2]{
-  \par #1 \hfill #2 \par
-}
-
-% usage: \lineTwoSides{<url>}{<left-side>}{<right-side>}
-\newcommand{\linkedLineTwoSides}[3]{
-  \lineTwoSides{\href{#1}{#2}}{#3}
-}
+\newcommand{\lineTwoSides}[2]{\par #1 \hfill #2 \par}
+% usage: \linkedLineTwoSides{<url>}{<left-side>}{<right-side>}
+\newcommand{\linkedLineTwoSides}[3]{\lineTwoSides{\href{#1}{#2}}{#3}}
 
 % usage: \name{<name>}
 \newcommand{\name}[1]{
