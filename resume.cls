@@ -56,6 +56,11 @@
   \org{#3}{#4}
 }
 
+% usage: \oneLineSummary{<description>}
+\newcommand{\oneLineSummary}[1]{
+  \textit{#1}
+}
+
 % usage: \lineTwoSides{<left-side>}{<right-side>}
 \newcommand{\lineTwoSides}[2]{
   {\par #1 \hfill #2 \par}
@@ -76,8 +81,8 @@
 % where <username> is the same handle for both GitHub and LinkedIn
 \newcommand{\info}[3]{
   \centerline{\large{
-    \href{mailto:#1}{\faEnvelopeO\ #1}\textperiodcentered 
-    \href{tel:#2}{\faPhone\ #2}\textperiodcentered 
+    \href{mailto:#1}{\faEnvelopeO\ #1}\textperiodcentered
+    \href{tel:#2}{\faPhone\ #2}\textperiodcentered
     \href{https://github.com/#3}{\faGithub}\ % only icon. no text, no separator.
     \href{https://www.linkedin.com/in/#3}{\faLinkedin\ #3}
   }}
