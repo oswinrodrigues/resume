@@ -69,6 +69,9 @@
   \vspace{1.5ex}
 }
 
-\newcommand{\dotSeparatedItem}[1]{
-  #1 \textperiodcentered
-}
+% usage as follows:
+% \dotSeparatedItem{<first-item>}
+% \dotSeparatedItem{<second-item}
+% ...
+% <last-item>
+\newcommand{\dotSeparatedItem}[1]{#1 \textperiodcentered}
