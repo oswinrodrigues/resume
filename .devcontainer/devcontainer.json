@@ -24,6 +24,7 @@
 	"customizations": {
 		"vscode": {
 			"settings": {
+				// Configure LaTeX Workshop to compile with XeLaTeX
 				"latex-workshop.latex.recipes": [
 					{
 						"name": "latexmk (xelatex)",
@@ -31,7 +32,9 @@
 							"xelatexmk"
 						]
 					}
-				]
+				],
+				// Configure LaTeX Workshop to clean auxiliary files on build success
+				"latex-workshop.latex.autoClean.run": "onSucceeded"
 			}
 		}
 	}
