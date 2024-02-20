@@ -18,13 +18,14 @@
 % customize section headings: make Large, left-aligned and add horizontal line after
 \titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule]
 \titlespacing*{\section}{0cm}{*1.8}{*1.8}
-% customize subsection headings: make large and left-aligned
+% customize subsection headings: make large, left-aligned and bolded
 \titleformat{\subsection}{\large\raggedright\bfseries}{}{0em}{}
 \titlespacing*{\subsection}{0cm}{*1.8}{*0.6}
 
 % support bullet lists
 \RequirePackage{enumitem}
-\setlist{nosep} % removes vertical spacing within and around list
+% removes vertical spacing within and around list
+\setlist{nosep}
 \setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
 
 % usage: \iconSection{<heading>}{<icon>}
