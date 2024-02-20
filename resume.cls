@@ -12,6 +12,8 @@
 
 % format page layout
 \RequirePackage[a4paper, left=0.5in, right=0.5in, top=0.5in, bottom=0.5in, nohead]{geometry}
+% suppress displaying page number
+\pagenumbering{gobble}
 
 % format section headings
 \RequirePackage{titlesec}
