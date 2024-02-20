@@ -10,7 +10,7 @@
 	"features": {
 		"ghcr.io/prulloac/devcontainer-features/latex:latest": {
 			"scheme": "small",
-			"packages": "titlesec,enumitem,fontawesome"
+			"packages": "titlesec,enumitem,fontawesome5"
 		}
 	},
 

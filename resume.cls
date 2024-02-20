@@ -8,7 +8,7 @@
 % setup hyperlink support
 \RequirePackage{hyperref}
 % setup icon support
-\RequirePackage{fontawesome}
+\RequirePackage{fontawesome5}
 
 % format page layout
 \RequirePackage[a4paper, left=0.5in, right=0.5in, top=0.5in, bottom=0.5in, nohead]{geometry}
@@ -60,10 +60,10 @@
 % where <username> is the same handle for both GitHub and LinkedIn
 \newcommand{\info}[3]{
   \centerline{\large{
-    \href{mailto:#1}{\faEnvelopeO\ #1} \thinspace
+    \href{mailto:#1}{\faEnvelope[regular]\ #1} \thinspace
     \href{tel:#2}{\faPhone\ #2} \thinspace
     \href{https://github.com/#3}{\faGithub} % only icon. no text, no separator.
-    \href{https://www.linkedin.com/in/#3}{\faLinkedin\ #3}
+    \href{https://www.linkedin.com/in/#3}{\faLinkedinIn\ #3}
   }}
   \vspace{1.5ex}
 }
