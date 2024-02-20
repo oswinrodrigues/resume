@@ -32,9 +32,8 @@ The résumé _format_ is under the [MIT](http://opensource.org/licenses/MIT) lic
 
 If you want to keep the résumé format as-is, but use your own details:
 
-1. Personalize `\name` and `\info` in `resume.tex`
-2. Replace content in `sections/*.tex` files with your own
-3. PDF is generated and viewed in VS Code, with the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension
+1. Replace content in each `sections/*.tex` file with your own
+2. PDF is generated and viewed in VS Code, with the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension
 
 Note: _LaTeX Workshop_ is provided by the container. You don't have to install it yourself.
 
@@ -43,5 +42,5 @@ Note: _LaTeX Workshop_ is provided by the container. You don't have to install i
 If you want to also modify the résumé format:
 
 1. Reorder or omit sections in `resume.tex` (see the `\input` lines)
-2. Modify local (section-specific) formatting in the respective `sections/*.tex` files
-3. Modify global (document-wide) formatting in `resume.cls`
+2. Modify global (résumé-wide) formatting in `resume.cls`
+3. Modify local (section-specific) formatting in the respective `sections/*.tex` file
