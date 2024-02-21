@@ -1,30 +1,26 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
+	// A simple Ubuntu container with Git and other common utilities installed.
 	"name": "Ubuntu",
-
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
-
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
+		// Installs TeX Live with tlmgr, alongside LaTeX Workshop extension.
+		// See https://github.com/prulloac/devcontainer-features/tree/main/src/latex for more info.
 		"ghcr.io/prulloac/devcontainer-features/latex:latest": {
+			// Select the minimal TeX Live scheme that contains XeLaTex.
 			"scheme": "small",
+			// Install certain packages not already covered by the scheme above.
 			"packages": "titlesec,enumitem,fontawesome5"
 		}
 	},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
-
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"settings": {
-				// Configure LaTeX Workshop to compile with XeLaTeX
+				// Configure LaTeX Workshop to compile with XeLaTeX.
 				"latex-workshop.latex.recipes": [
 					{
 						"name": "latexmk (xelatex)",
@@ -33,12 +29,9 @@
 						]
 					}
 				],
-				// Configure LaTeX Workshop to clean auxiliary files on build success
+				// Configure LaTeX Workshop to clean auxiliary files on build success.
 				"latex-workshop.latex.autoClean.run": "onSucceeded"
 			}
 		}
 	}
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }
