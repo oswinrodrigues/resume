@@ -13,7 +13,7 @@
 			// Select the minimal TeX Live scheme that contains XeLaTex.
 			"scheme": "small",
 			// Install certain packages not already covered by the scheme above.
-			"packages": "titlesec,enumitem,fontawesome5"
+			"packages": "titlesec,enumitem,fontawesome5,tabbing"
 		}
 	},
 	// Configure tool-specific properties.

@@ -9,6 +9,8 @@
 \RequirePackage{hyperref}
 % setup icon support
 \RequirePackage{fontawesome5}
+% setup tab stop support
+\RequirePackage{Tabbing}
 
 % format page layout
 \RequirePackage[a4paper, left=0.5in, right=0.5in, top=0.5in, bottom=0.5in, nohead]{geometry}
