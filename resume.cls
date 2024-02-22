@@ -47,6 +47,12 @@
   \subsectionTwoSides{#3}{#4}
   \role{#1}{#2}
 }
+% usage: \roleMulti{<title>}{<date>}
+% used for additional roles within the same company
+\newcommand{\roleMulti}[2]{
+  \vspace{0.85ex}
+  \role{#1}{#2}
+}
 
 % usage: \myLine{<description>}
 \newcommand{\myLine}[1]{\par #1 \par}
