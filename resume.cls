@@ -32,10 +32,10 @@
 
 % usage: \iconSection{<heading>}{<icon>}
 \newcommand{\iconSection}[2]{\section[#1]{#2\ #1}}
-% usage: \datedSubsection{<subheading>}{<date>}
-\newcommand{\datedSubsection}[2]{\subsection[#1]{#1 \hfill \textnormal{#2}}}
-% usage: \linkedDatedSubsection{<url>}{<subheading>}{<date>}
-\newcommand{\linkedDatedSubsection}[3]{\datedSubsection{\href{#1}{#2}}{#3}}
+% usage: \subsectionTwoSides{<subheading>}{<date>}
+\newcommand{\subsectionTwoSides}[2]{\subsection[#1]{#1 \hfill \textnormal{#2}}}
+% usage: \linkedSubsectionTwoSides{<url>}{<subheading>}{<date>}
+\newcommand{\linkedSubsectionTwoSides}[3]{\subsectionTwoSides{\href{#1}{#2}}{#3}}
 
 % usage: \role{<title>}{<date>}
 \newcommand{\role}[2]{
@@ -44,7 +44,7 @@
 }
 % usage: \position{<title>}{<date>}{<company>}{<location>}
 \newcommand{\position}[4]{
-  \datedSubsection{#3}{#4}
+  \subsectionTwoSides{#3}{#4}
   \role{#1}{#2}
 }
 
