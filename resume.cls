@@ -37,11 +37,15 @@
 % usage: \linkedDatedSubsection{<url>}{<subheading>}{<date>}
 \newcommand{\linkedDatedSubsection}[3]{\datedSubsection{\href{#1}{#2}}{#3}}
 
-% usage: \position{<role>}{<date>}{<company>}{<location>}
-\newcommand{\position}[4]{
-  \datedSubsection{#1}{#2}
-  \par \textbf{#3} \hfill #4 \par
+% usage: \role{<title>}{<date>}
+\newcommand{\role}[2]{
+  \par \textbf{#1} \hfill #2 \par
   \vspace{0.85ex}
+}
+% usage: \position{<title>}{<date>}{<company>}{<location>}
+\newcommand{\position}[4]{
+  \datedSubsection{#3}{#4}
+  \role{#1}{#2}
 }
 
 % usage: \myLine{<description>}
