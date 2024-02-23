@@ -14,7 +14,7 @@ The résumé _format_ is under the [MIT](http://opensource.org/licenses/MIT) lic
 
 # Workflow
 
-(Assumes [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) VS Code extension is setup. If not, follow its installation guide.)
+Assumes [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) VS Code extension is setup. If not, follow its installation guide.
 
 ## Setup
 
@@ -32,7 +32,7 @@ If you want to keep the résumé format as-is, but use your own details:
 2. Choose (uncomment) sections of interest in `resume.tex`
 3. PDF is generated and viewed in VS Code, with the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension
 
-Note: _LaTeX Workshop_ is provided by the container. You don't have to install it yourself.
+Note: LaTeX Workshop is provided by the container. You don't have to install it yourself.
 
 ### Complex
 
