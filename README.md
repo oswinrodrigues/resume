@@ -4,13 +4,9 @@ LaTeX code for my résumé. Adapted from [billryan/resume](https://github.com/bi
 
 # Demo
 
-In the [LaTeX.Online](https://latexonline.cc/) compiler:
+[Click here](https://texlive2020.latexonline.cc/compile?git=https://github.com/oswinrodrigues/resume&target=resume.tex&command=xelatex) to view the PDF.
 
-1. Input the TeX file [URL](https://github.com/oswinrodrigues/resume/blob/master/resume.tex)
-2. Select latest `texlive` from drop-down list
-3. Select `xelatex` tool from drop-down list
-
-Click the button to generate and view the resulting PDF.
+In case that does not work, head over to the [LaTeX.Online](https://latexonline.cc/) compiler. Input the `resume.tex` file's [URL](https://github.com/oswinrodrigues/resume/blob/master/resume.tex). Select `texlive2020` and `xelatex` from the drop-down lists. Click the button to generate the PDF.
 
 # License
 
