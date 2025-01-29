@@ -76,8 +76,7 @@
 \newcommand{\info}[3]{
   \centerline{
     \href{mailto:#1}{\faEnvelope[regular]\ #1} \thinspace
-    % TODO: UNCOMMENT WHEN BACK ON CANADIAN PHONE PLAN %
-    % \href{tel:#2}{\faPhone\ #2} \thinspace
+    \href{tel:#2}{\faPhone\ #2} \thinspace
     \href{https://github.com/#3}{\faGithub} % only icon. no text, no separator.
     \href{https://www.linkedin.com/in/#3}{\faLinkedinIn\ #3}
   }
