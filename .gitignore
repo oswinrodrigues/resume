@@ -10,6 +10,7 @@
 .DS_Store
 *.pdf
 .vscode
+**/devcontainer-lock.json
 
 ############################################
 ## LATEX TEMPORARY FILES
@@ -39,8 +40,3 @@
 *.xdv
 *.dvi
 *.ps
-
-############################################
-# do not upload secret infomation
-myresume.tex
-myresume.pdf
